@@ -9,7 +9,7 @@ from tensorflow.keras.preprocessing import image
 from werkzeug.utils import secure_filename
 import win32gui
 
-app = Flask(__name__,template_folder='templates')
+app = Flask(__name__, static_folder='static', template_folder='templates')
 
 dir_path = os.path.dirname(os.path.realpath(__file__))
 # UPLOAD_FOLDER = dir_path + '/uploads'
